@@ -1,0 +1,42 @@
+{
+  "name": "zoom-api",
+  "version": "1.0.0",
+  "description": "yet another zoom rest api client library",
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=14.16"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "del-cli dist && tsc && c8 ava"
+  },
+  "dependencies": {
+    "date-and-time": "^3.0.0",
+    "got": "^12.6.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@ava/typescript": "^4.0.0",
+    "@types/date-and-time": "^0.13.0",
+    "@types/got": "^9.6.12",
+    "@types/node": "^20.1.1",
+    "ava": "^5.2.0",
+    "c8": "^7.13.0",
+    "del-cli": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "ava": {
+    "typescript": {
+      "rewritePaths": {
+        "test/": "dist/test/"
+      },
+      "compile": false
+    },
+    "files": [
+      "test/*"
+    ]
+  }
+}

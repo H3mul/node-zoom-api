@@ -1,0 +1,256 @@
+{
+    "meetings": [
+        {
+            "uuid": "uuid_1234",
+            "id": 12345678,
+            "account_id": "account_id",
+            "host_id": "host_id",
+            "topic": "meeting topic",
+            "type": 1,
+            "start_time": "2022-01-1T01:01:00Z",
+            "timezone": "",
+            "duration": 0,
+            "total_size": 10000,
+            "recording_count": 2,
+            "share_url": "https://us02web.zoom.us/rec/share/ARealShareUrl",
+            "recording_files": [
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2023-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "MP4",
+                    "file_extension": "MP4",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl1",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl1",
+                    "status": "completed",
+                    "recording_type": "shared_screen_with_speaker_view"
+                },
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2022-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "M4A",
+                    "file_extension": "M4A",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl2",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl2",
+                    "status": "completed",
+                    "recording_type": "audio_only"
+                }
+            ]
+        },
+        {
+            "uuid": "uuid_1235",
+            "id": 12345679,
+            "account_id": "account_id",
+            "host_id": "host_id",
+            "topic": "meeting topic",
+            "type": 1,
+            "start_time": "2022-01-1T01:01:00Z",
+            "timezone": "",
+            "duration": 0,
+            "total_size": 10000,
+            "recording_count": 2,
+            "share_url": "https://us02web.zoom.us/rec/share/ARealShareUrl",
+            "recording_files": [
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2023-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "MP4",
+                    "file_extension": "MP4",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl1",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl1",
+                    "status": "completed",
+                    "recording_type": "shared_screen_with_speaker_view"
+                },
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2022-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "M4A",
+                    "file_extension": "M4A",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl2",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl2",
+                    "status": "completed",
+                    "recording_type": "audio_only"
+                }
+            ]
+        },
+        {
+            "uuid": "uuid_1236",
+            "id": 12345680,
+            "account_id": "account_id",
+            "host_id": "host_id",
+            "topic": "meeting topic",
+            "type": 1,
+            "start_time": "2022-01-1T01:01:00Z",
+            "timezone": "",
+            "duration": 0,
+            "total_size": 10000,
+            "recording_count": 2,
+            "share_url": "https://us02web.zoom.us/rec/share/ARealShareUrl",
+            "recording_files": [
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2023-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "MP4",
+                    "file_extension": "MP4",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl1",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl1",
+                    "status": "completed",
+                    "recording_type": "shared_screen_with_speaker_view"
+                },
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2022-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "M4A",
+                    "file_extension": "M4A",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl2",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl2",
+                    "status": "completed",
+                    "recording_type": "audio_only"
+                }
+            ]
+        },
+        {
+            "uuid": "uuid_1237",
+            "id": 12345681,
+            "account_id": "account_id",
+            "host_id": "host_id",
+            "topic": "meeting topic",
+            "type": 1,
+            "start_time": "2022-01-1T01:01:00Z",
+            "timezone": "",
+            "duration": 0,
+            "total_size": 10000,
+            "recording_count": 2,
+            "share_url": "https://us02web.zoom.us/rec/share/ARealShareUrl",
+            "recording_files": [
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2023-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "MP4",
+                    "file_extension": "MP4",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl1",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl1",
+                    "status": "completed",
+                    "recording_type": "shared_screen_with_speaker_view"
+                },
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2022-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "M4A",
+                    "file_extension": "M4A",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl2",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl2",
+                    "status": "completed",
+                    "recording_type": "audio_only"
+                }
+            ]
+        },
+        {
+            "uuid": "uuid_1238",
+            "id": 12345682,
+            "account_id": "account_id",
+            "host_id": "host_id",
+            "topic": "meeting topic",
+            "type": 1,
+            "start_time": "2022-01-1T01:01:00Z",
+            "timezone": "",
+            "duration": 0,
+            "total_size": 10000,
+            "recording_count": 2,
+            "share_url": "https://us02web.zoom.us/rec/share/ARealShareUrl",
+            "recording_files": [
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2023-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "MP4",
+                    "file_extension": "MP4",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl1",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl1",
+                    "status": "completed",
+                    "recording_type": "shared_screen_with_speaker_view"
+                },
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2022-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "M4A",
+                    "file_extension": "M4A",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl2",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl2",
+                    "status": "completed",
+                    "recording_type": "audio_only"
+                }
+            ]
+        },
+        {
+            "uuid": "uuid_1239",
+            "id": 12345683,
+            "account_id": "account_id",
+            "host_id": "host_id",
+            "topic": "meeting topic",
+            "type": 1,
+            "start_time": "2022-01-1T01:01:00Z",
+            "timezone": "",
+            "duration": 0,
+            "total_size": 10000,
+            "recording_count": 2,
+            "share_url": "https://us02web.zoom.us/rec/share/ARealShareUrl",
+            "recording_files": [
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2023-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "MP4",
+                    "file_extension": "MP4",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl1",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl1",
+                    "status": "completed",
+                    "recording_type": "shared_screen_with_speaker_view"
+                },
+                {
+                    "id": "recording_id",
+                    "meeting_id": "meeting_id_1",
+                    "recording_start": "2022-01-1T01:01:00Z",
+                    "recording_end": "2022-01-1T02:01:00Z",
+                    "file_type": "M4A",
+                    "file_extension": "M4A",
+                    "file_size": 5000,
+                    "play_url": "https://us02web.zoom.us/rec/play/ARealPlayUrl2",
+                    "download_url": "https://us02web.zoom.us/rec/download/ARealDownloadUrl2",
+                    "status": "completed",
+                    "recording_type": "audio_only"
+                }
+            ]
+        }
+    ]
+}
