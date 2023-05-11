@@ -11,7 +11,8 @@
   },
   "include":[
     "lib",
-    "test"
+    "test",
+    "examples"
   ],
 	"ts-node": {
 		"transpileOnly": true,

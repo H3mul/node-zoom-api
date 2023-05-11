@@ -1,9 +1,10 @@
 import got, { OptionsInit as GotOptions } from "got";
 import { HttpClient, HttpRequest, HttpRequestType, HttpResponse } from "./base-http-client.js";
+import logger from "../utils/logging.js";
 
 export class GotHttpClient extends HttpClient {
     static toGotOptions(request: HttpRequest): GotOptions {
-        const options:GotOptions = Object.assign({}, request);
+        const options:GotOptions = {};
 
         switch(request.type) {
             // case HttpRequestType.Raw:
@@ -20,6 +21,16 @@ export class GotHttpClient extends HttpClient {
         options.retry ||= {};
         options.retry.limit = 0;
 
+        for (let key of ['url', 'prefixUrl', 'method', 'headers', 'searchParams']) {
+            if (request[key] !== undefined) {
+                options[key] = request[key];
+            }
+        }
+        // options.url = request.url;
+        // options.prefixUrl = request.prefixUrl;
+        // options.method = request.method;
+        // options.headers = request.headers;
+        // options.searchParams = request.searchParams;
         return options;
     }
 

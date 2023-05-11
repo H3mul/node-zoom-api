@@ -12,8 +12,8 @@ export interface ZoomAuth {
 }
 
 export interface ZoomAuthResponse {
-    Access_token: string;
-    Expire_in: number;
+    access_token: string;
+    expires_in: number;
 }
 
 export type ZoomApiRequestParams = Record<string, string | number | boolean | null | undefined>;
@@ -54,13 +54,15 @@ export class ZoomClient extends BaseClient {
             type: HttpRequestType.Json
         }) as ZoomAuthResponse;
 
-        if (res.Access_token === undefined || res.Expire_in === undefined) {
+        logger.debug(`Refresh token response: ${JSON.stringify(res, null, 2)}`);
+
+        if (res.access_token === undefined || res.expires_in === undefined) {
             throw new Error("Invalid token returned from Zoom")    
         }
 
         this.authToken = {
-            token: res.Access_token,
-            expires: DateFormatter.addSeconds(new Date(), res.Expire_in * 1000)
+            token: res.access_token,
+            expires: DateFormatter.addSeconds(new Date(), res.expires_in * 1000)
         }
     }
 

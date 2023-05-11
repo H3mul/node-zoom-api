@@ -55,8 +55,8 @@ test('fetches a new token', async t => {
         });
 
         return {
-            Access_token: "testtoken",
-            Expire_in: 10
+            access_token: "testtoken",
+            expires_in: 10
         };
     });
 
@@ -82,8 +82,8 @@ test('refreshes token on request if its missing', async t => {
     const { client, httpClient } = getClients(false);
     httpClient.onRequest((req: HttpRequest) => {
         return {
-            Access_token: "testtoken",
-            Expire_in: 10
+            access_token: "testtoken",
+            expires_in: 10
         };
     });
 
@@ -106,8 +106,8 @@ test('refreshes token on request if its expired', async t => {
 
     httpClient.onRequest((req: HttpRequest) => {
         return {
-            Access_token: "testtoken",
-            Expire_in: 10
+            access_token: "testtoken",
+            expires_in: 10
         };
     });
 
