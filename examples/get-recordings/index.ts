@@ -1,5 +1,6 @@
-import { type } from 'os';
-import Zoom from '../../lib/index.js'
+import Zoom, { enableLogging } from '../../lib/index.js'
+
+enableLogging('debug');
 
 const zoom = Zoom({
     account_id: 'ACCOUNT_ID',

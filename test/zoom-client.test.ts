@@ -7,8 +7,6 @@ import logger from '../lib/utils/logging.js';
 
 import meetingListResponse from './fixtures/list_all_recordings.json' assert { type: "json"};
 
-logger.setConsoleVerbosity('error');
-
 function getClients(mockAuthToken: Boolean = true) {
     const httpClient = new MockHttpClient();
     const client = new ZoomClient({

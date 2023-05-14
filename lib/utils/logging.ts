@@ -14,29 +14,28 @@ const logFormat = winston.format.combine(
 // define the custom settings for each transport (file, console)
 const options = {
     console: {
-        level: "debug",
+        level: "none",
         handleExceptions: true,
         format: logFormat
     },
 };
 
-// Sucks that we can't just extend the Logger type atm, because it is served via factory
-// https://github.com/winstonjs/winston/issues/1902
 
-interface ExtendedLogger extends winston.Logger{
-    setConsoleVerbosity?: Function
-}
+let logger = winston.createLogger({
+        transports: [
+            new winston.transports.Console(options.console),
+        ],
+        exitOnError: false, // do not exit on handled exceptions
+    });
 
-const logger:ExtendedLogger = winston.createLogger({
-    transports: [
-        new winston.transports.Console(options.console),
-    ],
-    exitOnError: false, // do not exit on handled exceptions
-});
+export function enableLogging(log: winston.Logger | string) {
+    if (log instanceof winston.Logger) {
+        logger = log;
+        return;
+    }
 
-logger.setConsoleVerbosity = function(level: string) {
-    this.transports.filter((t: winston.transport) => t instanceof winston.transports.Console)
-        .forEach((t: winston.transport) => t.level = level);
+    logger.transports.filter((t: winston.transport) => t instanceof winston.transports.Console)
+        .forEach((t: winston.transport) => t.level = log);
 }
 
 export default logger;

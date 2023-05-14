@@ -8,3 +8,4 @@ const Zoom = (auth: ZoomAuth):ZoomEndpoints => {
 }
 
 export default Zoom;
+export * from './utils/logging.js';
