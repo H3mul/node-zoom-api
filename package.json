@@ -1,17 +1,22 @@
 {
-  "name": "zoom-api",
+  "name": "@h3mul/zoom-api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/H3mul/node-zoom-api.git"
+  },
   "version": "1.0.0",
   "description": "yet another zoom rest api client library",
   "author": "",
   "license": "ISC",
   "type": "module",
-  "exports": "./dist/lib/index.js",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
   "engines": {
     "node": ">=14.16"
   },
   "scripts": {
     "build": "del-cli dist && tsc",
-    "test": "del-cli dist && tsc && c8 ava"
+    "test": "c8 ava"
   },
   "dependencies": {
     "date-and-time": "^3.0.0",
