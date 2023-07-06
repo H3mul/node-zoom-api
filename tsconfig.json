@@ -13,7 +13,6 @@
   "include":[
     "lib",
     "test",
-    "examples"
   ],
 	"ts-node": {
 		"transpileOnly": true,
