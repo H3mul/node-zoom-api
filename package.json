@@ -1,7 +1,7 @@
 {
   "name": "@h3mul/zoom-api",
   "homepage": "https://github.com/H3mul/node-zoom-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "yet another zoom rest api client library",
   "type": "module",
   "main": "dist/lib/index.js",
