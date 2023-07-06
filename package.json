@@ -15,20 +15,20 @@
     "prepare": "npm run build && npm run test"
   },
   "dependencies": {
-    "date-and-time": "^3.0.0",
-    "got": "^12.6.0",
-    "winston": "^3.8.2"
+    "date-and-time": "^3.0.2",
+    "got": "^13.0.0",
+    "winston": "^3.9.0"
   },
   "devDependencies": {
-    "@ava/typescript": "^4.0.0",
+    "@ava/typescript": "^4.1.0",
     "@types/date-and-time": "^0.13.0",
     "@types/got": "^9.6.12",
-    "@types/node": "^20.1.1",
-    "ava": "^5.2.0",
-    "c8": "^7.13.0",
+    "@types/node": "^20.4.0",
+    "ava": "^5.3.1",
+    "c8": "^8.0.0",
     "del-cli": "^5.0.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.6"
   },
   "ava": {
     "typescript": {
