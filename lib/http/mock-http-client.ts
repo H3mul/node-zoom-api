@@ -1,4 +1,3 @@
-import logger from "../utils/logging.js";
 import { HttpClient, HttpRequest, HttpResponse } from "./base-http-client.js";
 
 interface Hook { (request: HttpRequest): HttpResponse | void }

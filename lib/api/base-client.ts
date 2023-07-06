@@ -1,5 +1,4 @@
 import { HttpClient, HttpMethod, HttpRequest, HttpRequestType, HttpResponse } from '../http/base-http-client.js';
-import logger from '../utils/logging.js'
 import * as utils from '../utils/utils.js'
 
 export interface BaseClientProperties {
@@ -36,7 +35,6 @@ export abstract class BaseClient {
      */
     protected async getAuthToken(): Promise<AuthToken> {
         if (!this.refreshTokenPromise && (!this.authToken?.expires || this.authToken?.expires <= new Date())) {
-            logger.debug("Refreshing token...")
             this.refreshTokenPromise = this.refreshAuthToken();
         } 
         if (this.refreshTokenPromise) {
@@ -66,9 +64,7 @@ export abstract class BaseClient {
             options.headers = Object.assign(options.headers || {}, await this.getAuthHeaders());
         }
 
-        logger.debug(`Request id=${++this.requestCount}: \n${JSON.stringify(options, null, 2)}`);
         const res = await this.httpClient.handleHttpRequest(options);
-        logger.debug(`Response id=${this.requestCount}: \n${JSON.stringify(res, null, 2)}`);
         return utils.delay(this.clientProperties.throttleSleep, res);
     }
 }

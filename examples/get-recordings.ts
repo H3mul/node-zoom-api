@@ -1,11 +1,9 @@
-import Zoom, { enableLogging } from '../../lib/index.js'
-
-enableLogging('debug');
+import Zoom from '../lib/index.js'
 
 const zoom = Zoom({
-    account_id: 'ACCOUNT_ID',
-    client_id: 'CLIENT_ID',
-    client_secret: 'CLIENT_SECRET'
+    account_id: process.env.ZOOM_ACCOUNT_ID!,
+    client_id: process.env.ZOOM_CLIENT_ID!,
+    client_secret: process.env.ZOOM_CLIENT_SECRET!
 });
 
 type User = { id: string };

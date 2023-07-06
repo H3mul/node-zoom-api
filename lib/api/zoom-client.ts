@@ -3,7 +3,6 @@ import { HttpClient, HttpRequest, HttpRequestType, HttpResponse } from "../http/
 import * as utils from '../utils/utils.js';
 import DateFormatter from 'date-and-time';
 import { HttpMethod } from "../http/base-http-client.js";
-import logger from "../utils/logging.js";
 
 export interface ZoomAuth {
     account_id: string;
@@ -53,8 +52,6 @@ export class ZoomClient extends BaseClient {
             headers: { Authorization: 'Basic ' + utils.toBase64(`${this.auth.client_id}:${this.auth.client_secret}`) },
             type: HttpRequestType.Json
         }) as ZoomAuthResponse;
-
-        logger.debug(`Refresh token response: ${JSON.stringify(res, null, 2)}`);
 
         if (res.access_token === undefined || res.expires_in === undefined) {
             throw new Error("Invalid token returned from Zoom")    

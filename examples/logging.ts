@@ -20,22 +20,22 @@ const options = {
     },
 };
 
+let logger: winston.Logger;
 
-let logger = winston.createLogger({
-        transports: [
-            new winston.transports.Console(options.console),
-        ],
-        exitOnError: false, // do not exit on handled exceptions
-    });
-
-export function enableLogging(log: winston.Logger | string) {
-    if (log instanceof winston.Logger) {
+export function enableLogging(log?: winston.Logger | string): winston.Logger {
+    if (!log) {
+        logger = winston.createLogger({
+            transports: [ new winston.transports.Console(options.console) ],
+            exitOnError: false, // do not exit on handled exceptions
+        });
+    } else if (typeof log === 'string') {
+        logger.transports.forEach((t) => t.level = log);
+    } else {
         logger = log;
-        return;
     }
-
-    logger.transports.filter((t: winston.transport) => t instanceof winston.transports.Console)
-        .forEach((t: winston.transport) => t.level = log);
+    return logger;
 }
+
+export function getLogger() { return logger }
 
 export default logger;

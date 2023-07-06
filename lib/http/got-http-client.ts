@@ -1,6 +1,5 @@
 import got, { OptionsInit as GotOptions } from "got";
 import { HttpClient, HttpRequest, HttpRequestType, HttpResponse } from "./base-http-client.js";
-import logger from "../utils/logging.js";
 
 export class GotHttpClient extends HttpClient {
     static toGotOptions(request: HttpRequest): GotOptions {
