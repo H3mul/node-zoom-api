@@ -3,7 +3,6 @@ import { ZoomApiRequest, ZoomClient } from "../lib/api/zoom-client.js";
 import { HttpRequest, HttpRequestType } from '../lib/http/base-http-client.js';
 import DateFormatter from 'date-and-time';
 import { MockHttpClient } from '../lib/http/mock-http-client.js';
-import logger from '../examples/logging.js';
 
 import meetingListResponse from './fixtures/list_all_recordings.json' assert { type: "json"};
 
